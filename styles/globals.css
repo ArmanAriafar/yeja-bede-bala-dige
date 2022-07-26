@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply h-fit rounded-[1.25rem] border-none bg-primary-500 px-12 py-[0.8rem] text-sm font-bold text-white outline-none hover:opacity-75 hover:ring-1 hover:ring-primary-500 hover:ring-offset-2;
+    }
+}
+
+.mobileNavUser li.ant-menu-item {
+    padding: 0 10px !important;
+}
+
+.desktopNav svg {
+    display: inline;
+}
+
+ul.ant-menu li.ant-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+/* ant menu item focused hover*/
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+    color: #454545 !important;
+    font-weight: 600;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+    border-color: #ff9f1c !important;
+}
+
+.activeLink {
+    font-weight: bold !important;
+}
+
+.notActiveLink svg {
+    fill: #959499 !important;
+}
+.activeLink .svgIcon {
+    fill: #ff9f1c !important;
+}
+
+.ant-btn-primary {
+    background: #ff9f1c !important;
+}
+
+.ant-input:focus,
+.ant-input:hover {
+    border: 1px #ff9f1c solid;
+    outline: 2px solid rgb(255, 159, 28, 0.5);
+}
+
+.ant-switch-checked {
+    background: #1abc9c !important;
+}
+.ant-switch-handle {
+    width: 23px;
+    height: 23px;
+    top: -1px;
+    left: 0;
+}
+.ant-switch-handle::before {
+    border-radius: 900px;
+}
