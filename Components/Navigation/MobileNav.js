@@ -8,7 +8,7 @@ import { HomeIcon, BookingIcon, MessagesIcon, MoreIcon, LogOutIcon, Notification
 
 const MobileNav = () => {
     return (
-        <nav className="flex w-full items-center justify-between bg-white px-4 py-2">
+        <nav className="flex w-full items-center justify-between bg-white px-4 py-2 max-w-md mx-auto">
             <Logo />
             <NavUser />
             <div className="fixed bottom-0 left-0 z-[200] grid w-full grid-cols-4 items-center justify-items-center border-t-2 border-primary-500 bg-white py-3">
